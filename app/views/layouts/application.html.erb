@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>GeekRadio</title>
-    <%= csrf_meta_tags %>
+<head>
+  <meta charset="utf-8">
+  <title>GeekRadio</title>
+  <%= csrf_meta_tags %>
+  <%= action_cable_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+</head>
 
-  <body>
-    <%= yield %>
-  </body>
+<body>
+<%= yield %>
+
+<%= javascript_include_tag 'application' %>
+</body>
 </html>

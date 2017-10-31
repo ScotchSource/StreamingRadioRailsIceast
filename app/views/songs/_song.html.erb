@@ -1,0 +1,5 @@
+<div>
+  <p><strong><%= song.title %></strong> by <%= song.singer %></p>
+  <%= link_to 'Listen', song.track.url(public: true) %>
+</div>
+<hr>

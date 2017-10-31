@@ -1,0 +1,18 @@
+<%= form_with model: song do |f| %>
+  <div>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div>
+    <%= f.label :singer %>
+    <%= f.text_field :singer %>
+  </div>
+
+  <div>
+    <%= f.label :track %>
+    <%= f.file_field :track %>
+  </div>
+
+  <%= f.submit %>
+<% end %>
