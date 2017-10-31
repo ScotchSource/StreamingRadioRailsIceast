@@ -23,3 +23,5 @@
 .byebug_history
 .idea/
 .env
+public/uploads
+ruby.exe.stackdump
